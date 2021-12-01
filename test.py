@@ -2,8 +2,10 @@ import os
 from datetime import date
 
 
-dir_name = '/home/kevin/Downloads'
-dir2 = 'AppImages'
-filename = 'some.pdf'
-path = os.path.join(dir_name, date.today().strftime('%d-%m-%Y'), filename)
-print(path)
+list1 = ['hasan', 'kaizar', 'hunaid']
+list2 = [0, 0, 0, 0]
+dict1 = dict(zip(list1, list2))
+
+dict1['hasan'] = dict1['hasan'] + 1
+for key in dict1.keys():
+    print(key)
